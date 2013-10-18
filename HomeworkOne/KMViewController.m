@@ -25,6 +25,18 @@
     NSLog(@"The button is pushed!");
 }
 
+- (IBAction)changeSwitchStatus:(id)sender
+{
+    if (_toggleSwitch.isOn)
+    {
+        NSLog(@"Switch is on!");
+    }
+    else
+    {
+        NSLog(@"Switch is off!");
+    }
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

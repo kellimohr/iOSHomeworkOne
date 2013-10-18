@@ -26,11 +26,19 @@
                                     <action selector="buttonStatus:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ZGS-eO-fO9"/>
                                 </connections>
                             </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vTE-Af-C1b">
+                                <rect key="frame" x="130" y="200" width="51" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="changeSwitchStatus:" destination="vXZ-lx-hvc" eventType="valueChanged" id="0Ao-KB-Woy"/>
+                                </connections>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="pushButton" destination="U8V-ZB-XVO" id="wEu-Gn-HkE"/>
+                        <outlet property="toggleSwitch" destination="vTE-Af-C1b" id="812-jd-Hfk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

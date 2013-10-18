@@ -14,4 +14,8 @@
 
 - (IBAction)buttonStatus:(id)sender;
 
+@property (nonatomic, weak) IBOutlet UISwitch *toggleSwitch;
+
+- (IBAction)changeSwitchStatus:(id)sender;
+
 @end
