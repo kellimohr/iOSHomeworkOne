@@ -10,4 +10,8 @@
 
 @interface KMViewController : UIViewController
 
+@property (nonatomic, weak) IBOutlet UIButton *pushButton;
+
+- (IBAction)buttonStatus:(id)sender;
+
 @end
