@@ -33,10 +33,18 @@
                                     <action selector="changeSwitchStatus:" destination="vXZ-lx-hvc" eventType="valueChanged" id="0Ao-KB-Woy"/>
                                 </connections>
                             </switch>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="50" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="rIi-Ge-Mi3">
+                                <rect key="frame" x="18" y="348" width="277" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="changeSliderValue:" destination="vXZ-lx-hvc" eventType="valueChanged" id="OsT-e9-lb9"/>
+                                </connections>
+                            </slider>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="moveSlider" destination="rIi-Ge-Mi3" id="psz-Yy-ua2"/>
                         <outlet property="pushButton" destination="U8V-ZB-XVO" id="wEu-Gn-HkE"/>
                         <outlet property="toggleSwitch" destination="vTE-Af-C1b" id="812-jd-Hfk"/>
                     </connections>

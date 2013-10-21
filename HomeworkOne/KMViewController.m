@@ -37,6 +37,14 @@
     }
 }
 
+- (IBAction)changeSliderValue:(id)sender
+{
+    if (_moveSlider.value > 60)
+    {
+        NSLog(@"Slider is greater than 60! Current value = %f", _moveSlider.value);
+    }
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

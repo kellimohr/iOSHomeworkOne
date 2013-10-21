@@ -18,4 +18,8 @@
 
 - (IBAction)changeSwitchStatus:(id)sender;
 
+@property (nonatomic, getter=isContinuous) UISlider *moveSlider;
+
+- (IBAction)changeSliderValue:(id)sender;
+
 @end
