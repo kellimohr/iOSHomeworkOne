@@ -36,7 +36,10 @@
         NSLog(@"Switch is off!");
     }
 }
+-(IBAction)unwindToRootViewController:(UIStoryboardSegue *)segue
+{
 
+}
 - (IBAction)changeSliderValue:(id)sender
 {
     if (_moveSlider.value > 60)
